@@ -1,0 +1,10 @@
+{
+  "title": "OpenProblem",
+  "type": "object",
+  "required": ["problemId", "status", "impact"],
+  "properties": {
+    "problemId": { "type": "string" },
+    "status": { "type": "string", "enum": ["open"] },
+    "impact": { "type": "integer", "minimum": 0 }
+  }
+}
